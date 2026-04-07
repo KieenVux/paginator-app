@@ -1,4 +1,4 @@
-import { BaseRepository } from 'src/base/base.repository';
+import { BaseRepository } from '../base/base.repository';
 import { EntityRepository } from 'typeorm';
 import { Order } from './entities/order.entity';
 
