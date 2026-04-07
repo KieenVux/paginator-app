@@ -34,10 +34,11 @@ import { OrderDetailModule } from './order-detail/order-detail.module';
           username: 'xb103548_admin',
           password: config.get<string>('database.password'),
           database: config.get<string>('database.db'),
-          entities: ['dist/**/entities/*.entity{.ts,.js}'],
+          entities: [__dirname + '/**/*.entity{.ts,.js}'],
           logger: 'advanced-console',
           synchronize: true,
           logging: 'all',
+          autoLoadEntities: true,
         };
       },
     }),
