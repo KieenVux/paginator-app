@@ -31,7 +31,7 @@ import { OrderDetailModule } from './order-detail/order-detail.module';
           type: 'mysql',
           host: config.get<string>('database.host'),
           port: config.get<number>('database.port'),
-          username: 'root',
+          username: 'xb103548_admin',
           password: config.get<string>('database.password'),
           database: config.get<string>('database.db'),
           entities: ['dist/**/entities/*.entity{.ts,.js}'],
